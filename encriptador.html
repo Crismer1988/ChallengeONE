@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="styles/encriptadorStyle.css">
+    <title>Encriptador de Texo - Challenge ONE</title>
+    
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Glory:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+            <a href="https://www.aluracursos.com/"><img id="logoAlura" src="Assets/logo.png" alt="Logo Alura"></a>
+            <h1>Encriptador de Texto</h1>
+    </header>
+
+    <main>
+        <!--Area de encriptado-->
+        <div class="encryptArea">
+            <div class="encryptArea__input">
+                <textarea id="inputText" maxlength="475" rows="1" cols="25" placeholder="Ingresa el texto aquí..."></textarea><br>
+            </div>
+            <div class="encryptArea__Btn">
+                <button id="encryptBtn" class="encryptBtn">Encriptar</button>
+                <button id="decryptBtn" class="decryptBtn">Desencriptar</button>
+            </div>
+        </div>
+
+        <!--Area de DESencriptado-->
+        <div class="decryptArea">
+            <div class="decryptArea__init">
+                <img id="decryptArea__img" src="Assets/Muñeco.png" alt="Hombrecillo arrodillado observando un diamante con una lupa"><br>
+                <h3 id="decryptArea__alert">¡Ningún mensaje fue encontrado!<br><br></h3>
+                <p id="decryptArea__request">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div>
+            <div class="decryptArea__final">
+                <div class="resultText__container">
+                    <p id="resultText"></p>
+                </div>
+                <div class="copyBtn__container">
+                    <button id="copyBtn">Copiar</button>
+                </div>
+            </div>
+        </div>
+
+        <!--JS y Sweet Alerts-->
+        <script rel="script" src="encriptador.js"></script>
+        <script rel="script" src="sweetAlert.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </main>
+
+    <footer>
+        <a href="//www.oracle.com/co/education/oracle-next-education/" style="text-decoration: none;"><p id="footerInfo">Challenge Alura ONE - Principiante en Programación.</p></a>
+    </footer>
+</body>
+</html>
